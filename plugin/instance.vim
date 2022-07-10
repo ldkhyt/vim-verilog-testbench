@@ -170,7 +170,7 @@ def INSTANCE():
     # print(instance_text)
     cur_line = int(vim.eval("line(\".\")"))
     vim.current.line = instance_text[0]
-    vim.command('w')
+    # vim.command('w')
     for ins_i in range(1, len(instance_text)):
         # print(instance_text[ins_i])
         vim.current.buffer.append(instance_text[ins_i], cur_line)
