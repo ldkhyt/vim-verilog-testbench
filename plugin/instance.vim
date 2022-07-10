@@ -81,7 +81,7 @@ def analyze_module(text):
     parameter_re = re.compile("(parameter)\s+([a-zA-Z_]+[\w]*\s*=\s*.*?)\s*(?=[;,)])")
 
     parameters = re.findall(parameter_re, text)
-    print(parameters)
+    # print(parameters)
     return mod_name, signals, parameters
 
 
